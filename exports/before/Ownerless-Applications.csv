@@ -1,0 +1,6 @@
+"DisplayName","AppId","ObjectId","OwnerCount","TotalCredentials","ExpiredSecrets","ExpiringSecrets","ExpiredCerts","ExpiringCerts","RiskScore","Severity","Findings"
+"OmniVerse-Shadow-IT-App","a122c64d-fd2e-44b2-948d-6857d9fc2bd2","30d61ce8-5e5f-4b90-8b85-bb318cad8ea7","0","0","0","0","0","0","45","High","No owner assigned; No credential inventory and no owner"
+"OmniVerse-Legacy-Reporting","7f11aa08-7c7b-41d2-968f-a25d28742e15","3b4db036-a065-4c54-989a-1b4514596930","0","0","0","0","0","0","45","High","No owner assigned; No credential inventory and no owner"
+"OmniVerse-Abandoned-OAuth","3b33a074-780c-4a39-a8be-8c2dfd43ea79","408f21ec-ba9a-471b-995c-dc1baad55baa","0","0","0","0","0","0","45","High","No owner assigned; No credential inventory and no owner"
+"OmniVerse-Dev-Integration","9262e595-effc-41f9-97f5-e2745f38ffb3","d13d7bf8-d716-4231-8924-c4f27f7bcfad","0","0","0","0","0","0","45","High","No owner assigned; No credential inventory and no owner"
+"OmniVerse-Unmanaged-API","122a7a99-a3de-496d-ad76-4794f8245ee9","eaf4b778-b2ef-48c0-a418-325624dba209","0","0","0","0","0","0","45","High","No owner assigned; No credential inventory and no owner"

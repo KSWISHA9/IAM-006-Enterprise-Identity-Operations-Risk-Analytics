@@ -1,0 +1,6 @@
+"Id","Severity","Finding","Count","Recommendation"
+"PAM-001","Critical","Global Administrator assignments","6","Limit standing Global Administrators and move admin access into PIM eligible assignments."
+"PAM-002","Critical","Disabled accounts with privileged roles","1","Remove all privileged roles from disabled accounts immediately."
+"PAM-003","Critical","Non-IT/Security users with privileged roles","6","Remove privileged roles that do not align with job function."
+"PAM-004","Critical","Users with multiple privileged roles","1","Reduce role stacking and enforce separation of duties."
+"PAM-005","High","Privileged users with no recorded sign-in activity","9","Review unused privileged identities and remove unnecessary role assignments."

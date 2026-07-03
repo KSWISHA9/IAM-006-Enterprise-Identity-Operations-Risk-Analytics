@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Enterprise Identity Health Analyzer</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; background: #f6f8fa; color: #222; }
+h1 { margin-bottom: 5px; }
+.card { background: white; border-radius: 10px; padding: 20px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.score { font-size: 56px; font-weight: bold; }
+.critical { color: #b00020; font-weight: bold; }
+.high { color: #d35400; font-weight: bold; }
+.medium { color: #b7950b; font-weight: bold; }
+.low { color: #2471a3; font-weight: bold; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th { background: #20232a; color: white; text-align: left; }
+td, th { padding: 10px; border: 1px solid #ddd; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.metric { font-size: 28px; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Enterprise Identity Health Analyzer (before)</h1>
+<p>Generated: 07/02/2026 16:49:20</p>
+
+<div class="card">
+<div>Identity Operations Score</div>
+<div class="score">66 / 100</div>
+</div>
+
+<div class="grid">
+<div class="card"><div>Total Users</div><div class="metric">209</div></div>
+<div class="card"><div>Groups</div><div class="metric">10</div></div>
+<div class="card"><div>Apps</div><div class="metric">5</div></div>
+<div class="card"><div>Privileged Assignments</div><div class="metric">10</div></div>
+</div>
+
+<div class="card">
+<h2>Severity Summary</h2>
+<table>
+<tr><th>Severity</th><th>Finding Types</th></tr>
+<tr><td class="critical">Critical</td><td>5</td></tr>
+<tr><td class="high">High</td><td>4</td></tr>
+<tr><td class="medium">Medium</td><td>3</td></tr>
+<tr><td class="low">Low</td><td>3</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>Findings</h2>
+<table>
+<tr><th>ID</th><th>Category</th><th>Severity</th><th>Finding</th><th>Count</th></tr>
+<tr><td>IAM-001</td><td>Identity Hygiene</td><td class='high'>High</td><td>Disabled accounts present</td><td>5</td></tr>
+<tr><td>IAM-002</td><td>Identity Hygiene</td><td class='high'>High</td><td>Password never expires accounts</td><td>10</td></tr>
+<tr><td>IAM-003</td><td>Identity Hygiene</td><td class='medium'>Medium</td><td>Users missing department attribute</td><td>3</td></tr>
+<tr><td>IAM-004</td><td>Identity Hygiene</td><td class='low'>Low</td><td>Users missing job title attribute</td><td>3</td></tr>
+<tr><td>IAM-005</td><td>Identity Hygiene</td><td class='high'>High</td><td>Enabled users with no recorded sign-in activity</td><td>203</td></tr>
+<tr><td>IAM-008</td><td>Access Governance</td><td class='high'>High</td><td>Users with excessive group memberships</td><td>5</td></tr>
+<tr><td>IAM-009</td><td>Application Governance</td><td class='critical'>Critical</td><td>Ownerless application registrations</td><td>5</td></tr>
+<tr><td>IAM-012</td><td>Privileged Access</td><td class='critical'>Critical</td><td>Privileged role assignments discovered</td><td>10</td></tr>
+<tr><td>IAM-013</td><td>Privileged Access</td><td class='critical'>Critical</td><td>Disabled accounts with privileged roles</td><td>1</td></tr>
+<tr><td>IAM-014</td><td>Privileged Access</td><td class='critical'>Critical</td><td>Non-IT/Security users with privileged roles</td><td>6</td></tr>
+<tr><td>IAM-015</td><td>Privileged Access</td><td class='critical'>Critical</td><td>Users with multiple privileged roles</td><td>1</td></tr>
+
+</table>
+</div>
+
+</body>
+</html>

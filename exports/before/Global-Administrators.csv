@@ -1,0 +1,7 @@
+"Role","DisplayName","UserPrincipalName","Department","JobTitle","AccountEnabled","UserType","LastSignIn","UserId"
+"Global Administrator","Keshawn Lynch","KeshawnLynch@Omniverse689.onmicrosoft.com",,,"True","Member","7/2/2026 5:18:26 AM","47713a44-2528-4721-bd81-68fdf846bf08"
+"Global Administrator","Break Glass Admin 01","breakglass01@Omniverse689.onmicrosoft.com",,,"True","Member",,"eba94305-273c-406f-8192-051e437d7c13"
+"Global Administrator","Break Glass Admin 02","breakglass02@Omniverse689.onmicrosoft.com",,,"True","Member",,"7892eba6-40e0-4585-a8ae-7f486baf288f"
+"Global Administrator","Alex Adams 26","alex.adams26@omniverse689.onmicrosoft.com","IT","Systems Administrator","True","Member",,"64e4a1fa-2d0d-4247-8f9f-ca8ad17a86ee"
+"Global Administrator","Alex Adams 51","alex.adams51@omniverse689.onmicrosoft.com","Security","Security Analyst","True","Member",,"d784080e-daa8-43fa-b97a-e3020b567a82"
+"Global Administrator","Alex Adams 101","alex.adams101@omniverse689.onmicrosoft.com","HR","HR Business Partner","True","Member",,"e2c7ac1f-4d8a-445d-af0b-52248b72471d"

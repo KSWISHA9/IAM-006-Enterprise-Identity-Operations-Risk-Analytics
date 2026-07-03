@@ -1,0 +1,6 @@
+"AppName","AppId","OwnerCount","ServicePrincipalExists","SecretCount","CertificateCount","TotalCredentials","ExpiredCredentials","ExpiringCredentials","LongLivedCredentials","RiskScore","Severity","Findings"
+"OmniVerse-Shadow-IT-App","a122c64d-fd2e-44b2-948d-6857d9fc2bd2","0","False","0","0","0","0","0","0","45","High","Missing owner; Unowned app with no credential inventory; No matching service principal found"
+"OmniVerse-Legacy-Reporting","7f11aa08-7c7b-41d2-968f-a25d28742e15","0","False","0","0","0","0","0","0","45","High","Missing owner; Unowned app with no credential inventory; No matching service principal found"
+"OmniVerse-Abandoned-OAuth","3b33a074-780c-4a39-a8be-8c2dfd43ea79","0","False","0","0","0","0","0","0","45","High","Missing owner; Unowned app with no credential inventory; No matching service principal found"
+"OmniVerse-Dev-Integration","9262e595-effc-41f9-97f5-e2745f38ffb3","0","False","0","0","0","0","0","0","45","High","Missing owner; Unowned app with no credential inventory; No matching service principal found"
+"OmniVerse-Unmanaged-API","122a7a99-a3de-496d-ad76-4794f8245ee9","0","False","0","0","0","0","0","0","45","High","Missing owner; Unowned app with no credential inventory; No matching service principal found"

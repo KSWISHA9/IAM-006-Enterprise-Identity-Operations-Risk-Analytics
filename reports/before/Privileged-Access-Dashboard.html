@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Privileged Access Dashboard</title>
+<style>
+body { font-family: Arial; margin: 40px; background: #f6f8fa; }
+.card { background: white; border-radius: 10px; padding: 20px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.score { font-size: 54px; font-weight: bold; }
+.critical { color: #b00020; font-weight: bold; }
+.high { color: #d35400; font-weight: bold; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th { background: #20232a; color: white; text-align: left; }
+td, th { padding: 10px; border: 1px solid #ddd; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.metric { font-size: 28px; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Privileged Access Dashboard (before)</h1>
+<p>Generated: 07/02/2026 16:49:42</p>
+
+<div class="card">
+<div>Privileged Access Score</div>
+<div class="score">52 / 100</div>
+</div>
+
+<div class="grid">
+<div class="card"><div>Privileged Assignments</div><div class="metric">10</div></div>
+<div class="card"><div>Global Admins</div><div class="metric">6</div></div>
+<div class="card"><div>Multi-Role Admins</div><div class="metric">1</div></div>
+<div class="card"><div>Disabled Admins</div><div class="metric">1</div></div>
+</div>
+
+<div class="card">
+<h2>Findings</h2>
+<table>
+<tr><th>ID</th><th>Severity</th><th>Finding</th><th>Count</th></tr>
+<tr><td>PAM-001</td><td class='critical'>Critical</td><td>Global Administrator assignments</td><td>6</td></tr>
+<tr><td>PAM-002</td><td class='critical'>Critical</td><td>Disabled accounts with privileged roles</td><td>1</td></tr>
+<tr><td>PAM-003</td><td class='critical'>Critical</td><td>Non-IT/Security users with privileged roles</td><td>6</td></tr>
+<tr><td>PAM-004</td><td class='critical'>Critical</td><td>Users with multiple privileged roles</td><td>1</td></tr>
+<tr><td>PAM-005</td><td class='high'>High</td><td>Privileged users with no recorded sign-in activity</td><td>9</td></tr>
+
+</table>
+</div>
+</body>
+</html>

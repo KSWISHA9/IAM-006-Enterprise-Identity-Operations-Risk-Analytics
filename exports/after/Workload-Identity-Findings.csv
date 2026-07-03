@@ -1,0 +1,4 @@
+"Id","Severity","Finding","Count","Recommendation"
+"WID-001","Critical","Ownerless workload identities","5","Assign technical and business owners to all app registrations."
+"WID-005","High","High-risk workload identities","5","Review high-risk workload identities for ownership, permissions, and credential lifecycle."
+"WID-006","Low","App registrations without matching service principals","5","Validate whether app registrations are still required."

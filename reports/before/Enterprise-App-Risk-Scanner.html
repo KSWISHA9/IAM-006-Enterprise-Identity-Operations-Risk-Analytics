@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Enterprise App Risk Scanner</title>
+<style>
+body { font-family: Arial; margin: 40px; background: #f6f8fa; }
+.card { background: white; border-radius: 10px; padding: 20px; margin: 16px 0; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+.score { font-size: 54px; font-weight: bold; }
+.critical { color: #b00020; font-weight: bold; }
+.high { color: #d35400; font-weight: bold; }
+.medium { color: #b7950b; font-weight: bold; }
+.low { color: #2471a3; font-weight: bold; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th { background: #20232a; color: white; text-align: left; }
+td, th { padding: 10px; border: 1px solid #ddd; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.metric { font-size: 28px; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Enterprise App Risk Scanner (before)</h1>
+<p>Generated: 07/02/2026 16:51:53</p>
+
+<div class="card">
+<div>Application Governance Score</div>
+<div class="score">60 / 100</div>
+</div>
+
+<div class="grid">
+<div class="card"><div>Apps Scanned</div><div class="metric">5</div></div>
+<div class="card"><div>Ownerless Apps</div><div class="metric">5</div></div>
+<div class="card"><div>Expired Cred Apps</div><div class="metric">0</div></div>
+<div class="card"><div>Expiring Soon</div><div class="metric">0</div></div>
+</div>
+
+<div class="card">
+<h2>Findings</h2>
+<table>
+<tr><th>ID</th><th>Severity</th><th>Finding</th><th>Count</th></tr>
+<tr><td>APP-001</td><td class='critical'>Critical</td><td>Ownerless application registrations</td><td>5</td></tr>
+<tr><td>APP-004</td><td class='high'>High</td><td>High-risk applications</td><td>5</td></tr>
+
+</table>
+</div>
+
+<div class="card">
+<h2>Top 10 Risky Applications</h2>
+<table>
+<tr><th>Application</th><th>Owners</th><th>Credentials</th><th>Risk Score</th><th>Severity</th><th>Findings</th></tr>
+<tr><td>OmniVerse-Shadow-IT-App</td><td>0</td><td>0</td><td>45</td><td class='high'>High</td><td>No owner assigned; No credential inventory and no owner</td></tr>
+<tr><td>OmniVerse-Legacy-Reporting</td><td>0</td><td>0</td><td>45</td><td class='high'>High</td><td>No owner assigned; No credential inventory and no owner</td></tr>
+<tr><td>OmniVerse-Abandoned-OAuth</td><td>0</td><td>0</td><td>45</td><td class='high'>High</td><td>No owner assigned; No credential inventory and no owner</td></tr>
+<tr><td>OmniVerse-Dev-Integration</td><td>0</td><td>0</td><td>45</td><td class='high'>High</td><td>No owner assigned; No credential inventory and no owner</td></tr>
+<tr><td>OmniVerse-Unmanaged-API</td><td>0</td><td>0</td><td>45</td><td class='high'>High</td><td>No owner assigned; No credential inventory and no owner</td></tr>
+
+</table>
+</div>
+</body>
+</html>

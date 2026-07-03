@@ -1,0 +1,3 @@
+"Id","Severity","Finding","Count","Recommendation"
+"APP-001","Critical","Ownerless application registrations","5","Assign at least one business and technical owner to every app registration."
+"APP-004","High","High-risk applications","5","Review high-risk apps for ownership, credentials, API permissions, and business justification."
