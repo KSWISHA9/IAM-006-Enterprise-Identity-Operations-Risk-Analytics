@@ -1,6 +1,7 @@
-# IAM-006 - Enterprise Identity Operations and Risk Analytics
+﻿# IAM-006 - Enterprise Identity Operations and Risk Analytics
 
-> OmniVerse Identity Operations Toolkit
+
+[Back to Portfolio](https://github.com/KSWISHA9)
 
 Enterprise identity risk analytics, Microsoft Entra ID posture assessment, executive reporting, and remediation planning using Microsoft Graph PowerShell.
 
@@ -8,7 +9,7 @@ Enterprise identity risk analytics, Microsoft Entra ID posture assessment, execu
 
 ## Business Request
 
-OmniVerse leadership requested an internal identity operations toolkit to assess Microsoft Entra ID risk across users, privileged roles, enterprise applications, workload identities, and identity hygiene — and to deliver executive-level reporting that shows measurable security improvement.
+OmniVerse leadership requested an internal identity operations toolkit to assess Microsoft Entra ID risk across users, privileged roles, enterprise applications, workload identities, and identity hygiene â€” and to deliver executive-level reporting that shows measurable security improvement.
 
 ---
 
@@ -36,67 +37,67 @@ flowchart TD
 
 ## Walkthrough
 
-![Controlled Chaos Tenant Builder](images/01-controlled-chaos-tenant-builder.png.png)
+![Controlled Chaos Tenant Builder](images/01-controlled-chaos-tenant-builder.png)
 
-The controlled chaos builder created 200 lab users across 8 departments with intentional identity findings — disabled accounts left in active groups, excessive access, password policy exceptions, and ownerless applications.
+The controlled chaos builder created 200 lab users across 8 departments with intentional identity findings â€” disabled accounts left in active groups, excessive access, password policy exceptions, and ownerless applications.
 
 ---
 
-![Tenant Verification](images/02-tenant-verification.png.png)
+![Tenant Verification](images/02-tenant-verification.png)
 
 The verification script confirmed all expected IAM-006 findings were present in the tenant before analytics were generated.
 
 ---
 
-![Enterprise Identity Health Analyzer](images/03-enterprise-identity-health-analyzer.png.png)
+![Enterprise Identity Health Analyzer](images/03-enterprise-identity-health-analyzer.png)
 
 The Identity Health Analyzer performed a live Microsoft Graph assessment and produced an initial identity operations score across all finding categories.
 
 ---
 
-![Enterprise Identity Health Findings](images/04-enterprise-identity-health-findings.png.png)
+![Enterprise Identity Health Findings](images/04-enterprise-identity-health-findings.png)
 
-Critical and high-risk findings surfaced — privileged assignments, ownerless applications, disabled accounts, and users with excessive access across multiple department groups.
+Critical and high-risk findings surfaced â€” privileged assignments, ownerless applications, disabled accounts, and users with excessive access across multiple department groups.
 
 ---
 
-![Privileged Access Dashboard](images/05-privileged-access-dashboard.png.png)
+![Privileged Access Dashboard](images/05-privileged-access-dashboard.png)
 
 The Privileged Access Dashboard reviewed permanent role assignments, non-IT administrative access, disabled privileged accounts, and users holding multiple privileged roles simultaneously.
 
 ---
 
-![Enterprise App Risk Scanner](images/06-enterprise-app-risk-scanner.png.png)
+![Enterprise App Risk Scanner](images/06-enterprise-app-risk-scanner.png)
 
 The App Risk Scanner identified ownerless application registrations, expiring credentials, and abandoned applications requiring governance review or decommission.
 
 ---
 
-![Workload Identity Analyzer](images/07-workload-identity-analyzer.png.png)
+![Workload Identity Analyzer](images/07-workload-identity-analyzer.png)
 
-The Workload Identity Analyzer reviewed service principal hygiene and application ownership — identifying workload identities with no owner and no credential rotation policy.
+The Workload Identity Analyzer reviewed service principal hygiene and application ownership â€” identifying workload identities with no owner and no credential rotation policy.
 
 ---
 
-![Identity Hygiene Analyzer](images/08-identity-hygiene-analyzer.png.png)
+![Identity Hygiene Analyzer](images/08-identity-hygiene-analyzer.png)
 
 The Identity Hygiene Analyzer reviewed disabled accounts, missing directory attributes, excessive group memberships, and other lifecycle issues across the full user population.
 
 ---
 
-![Executive Risk Dashboard Before](images/09-executive-risk-dashboard-before.png.png)
+![Executive Risk Dashboard Before](images/09-executive-risk-dashboard-before.png)
 
-Before remediation, the tenant scored **59 / 100** — high identity operations risk across privileged access, application governance, and identity hygiene.
-
----
-
-![Executive Risk Dashboard After](images/10-executive-risk-dashboard-after.png.png)
-
-After remediation, the tenant improved to **88 / 100** — demonstrating measurable security posture improvement across every category.
+Before remediation, the tenant scored **59 / 100** â€” high identity operations risk across privileged access, application governance, and identity hygiene.
 
 ---
 
-![Remediation Tracker](images/11-remediation-tracker.png.png)
+![Executive Risk Dashboard After](images/10-executive-risk-dashboard-after.png)
+
+After remediation, the tenant improved to **88 / 100** â€” demonstrating measurable security posture improvement across every category.
+
+---
+
+![Remediation Tracker](images/11-remediation-tracker.png)
 
 The Remediation Tracker generated prioritized recommendations across all finding categories and tracked the actions taken to reach the improved security posture.
 
@@ -220,24 +221,24 @@ The Remediation Tracker generated prioritized recommendations across all finding
 
 ```text
 IAM-006-Enterprise-Identity-Operations-Risk-Analytics/
-├── scripts/
-│   ├── 01-Build-Controlled-Chaos-Tenant.ps1
-│   ├── 01.5-Seed-Privileged-Identity-Risks.ps1
-│   ├── 02-Verify-Tenant.ps1
-│   ├── 03-Enterprise-Identity-Health-Analyzer.ps1
-│   ├── 04-Privileged-Access-Dashboard.ps1
-│   ├── 05-Enterprise-App-Risk-Scanner.ps1
-│   ├── 06-Workload-Identity-Analyzer.ps1
-│   ├── 07-Identity-Hygiene-Analyzer.ps1
-│   ├── 08-Executive-Risk-Dashboard.ps1
-│   ├── 09-Remediation-Tracker.ps1
-│   └── Start-IAM006.ps1
-├── images/
-├── reports/
-├── exports/
-├── dashboards/
-├── docs/
-└── README.md
+â”œâ”€â”€ scripts/
+â”‚   â”œâ”€â”€ 01-Build-Controlled-Chaos-Tenant.ps1
+â”‚   â”œâ”€â”€ 01.5-Seed-Privileged-Identity-Risks.ps1
+â”‚   â”œâ”€â”€ 02-Verify-Tenant.ps1
+â”‚   â”œâ”€â”€ 03-Enterprise-Identity-Health-Analyzer.ps1
+â”‚   â”œâ”€â”€ 04-Privileged-Access-Dashboard.ps1
+â”‚   â”œâ”€â”€ 05-Enterprise-App-Risk-Scanner.ps1
+â”‚   â”œâ”€â”€ 06-Workload-Identity-Analyzer.ps1
+â”‚   â”œâ”€â”€ 07-Identity-Hygiene-Analyzer.ps1
+â”‚   â”œâ”€â”€ 08-Executive-Risk-Dashboard.ps1
+â”‚   â”œâ”€â”€ 09-Remediation-Tracker.ps1
+â”‚   â””â”€â”€ Start-IAM006.ps1
+â”œâ”€â”€ images/
+â”œâ”€â”€ reports/
+â”œâ”€â”€ exports/
+â”œâ”€â”€ dashboards/
+â”œâ”€â”€ docs/
+â””â”€â”€ README.md
 ```
 
 ---
@@ -284,3 +285,4 @@ Run individual modules:
 This project demonstrates how Microsoft Entra ID identity data can be transformed into actionable operational intelligence through automation, governance, executive reporting, and remediation planning. It reflects an enterprise IAM engineering workflow rather than a collection of standalone scripts.
 
 Created by **Keshawn Lynch**
+
