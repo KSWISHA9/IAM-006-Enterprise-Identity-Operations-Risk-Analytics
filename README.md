@@ -2,23 +2,7 @@
 
 > OmniVerse Identity Operations Toolkit
 
----
-
-## Table of Contents
-
-- [Business Request](#business-request)
-- [Architecture](#architecture)
-- [Project Objectives](#project-objectives)
-- [Toolkit Modules](#toolkit-modules)
-- [Walkthrough](#walkthrough)
-- [Before vs After](#before-vs-after)
-- [Reports Generated](#reports-generated)
-- [Skills Demonstrated](#skills-demonstrated)
-- [Lessons Learned](#lessons-learned)
-- [Future Enhancements](#future-enhancements)
-- [Repository Structure](#repository-structure)
-- [How to Run](#how-to-run)
-- [Related Projects](#related-projects)
+Enterprise identity risk analytics, Microsoft Entra ID posture assessment, executive reporting, and remediation planning using Microsoft Graph PowerShell.
 
 ---
 
@@ -50,6 +34,105 @@ flowchart TD
 
 ---
 
+## Walkthrough
+
+![Controlled Chaos Tenant Builder](images/01-controlled-chaos-tenant-builder.png.png)
+
+The controlled chaos builder created 200 lab users across 8 departments with intentional identity findings — disabled accounts left in active groups, excessive access, password policy exceptions, and ownerless applications.
+
+---
+
+![Tenant Verification](images/02-tenant-verification.png.png)
+
+The verification script confirmed all expected IAM-006 findings were present in the tenant before analytics were generated.
+
+---
+
+![Enterprise Identity Health Analyzer](images/03-enterprise-identity-health-analyzer.png.png)
+
+The Identity Health Analyzer performed a live Microsoft Graph assessment and produced an initial identity operations score across all finding categories.
+
+---
+
+![Enterprise Identity Health Findings](images/04-enterprise-identity-health-findings.png.png)
+
+Critical and high-risk findings surfaced — privileged assignments, ownerless applications, disabled accounts, and users with excessive access across multiple department groups.
+
+---
+
+![Privileged Access Dashboard](images/05-privileged-access-dashboard.png.png)
+
+The Privileged Access Dashboard reviewed permanent role assignments, non-IT administrative access, disabled privileged accounts, and users holding multiple privileged roles simultaneously.
+
+---
+
+![Enterprise App Risk Scanner](images/06-enterprise-app-risk-scanner.png.png)
+
+The App Risk Scanner identified ownerless application registrations, expiring credentials, and abandoned applications requiring governance review or decommission.
+
+---
+
+![Workload Identity Analyzer](images/07-workload-identity-analyzer.png.png)
+
+The Workload Identity Analyzer reviewed service principal hygiene and application ownership — identifying workload identities with no owner and no credential rotation policy.
+
+---
+
+![Identity Hygiene Analyzer](images/08-identity-hygiene-analyzer.png.png)
+
+The Identity Hygiene Analyzer reviewed disabled accounts, missing directory attributes, excessive group memberships, and other lifecycle issues across the full user population.
+
+---
+
+![Executive Risk Dashboard Before](images/09-executive-risk-dashboard-before.png.png)
+
+Before remediation, the tenant scored **59 / 100** — high identity operations risk across privileged access, application governance, and identity hygiene.
+
+---
+
+![Executive Risk Dashboard After](images/10-executive-risk-dashboard-after.png.png)
+
+After remediation, the tenant improved to **88 / 100** — demonstrating measurable security posture improvement across every category.
+
+---
+
+![Remediation Tracker](images/11-remediation-tracker.png.png)
+
+The Remediation Tracker generated prioritized recommendations across all finding categories and tracked the actions taken to reach the improved security posture.
+
+---
+
+## Table of Contents
+
+- [Business Request](#business-request)
+- [Architecture](#architecture)
+- [Walkthrough](#walkthrough)
+- [Before vs After](#before-vs-after)
+- [Project Objectives](#project-objectives)
+- [Toolkit Modules](#toolkit-modules)
+- [Reports Generated](#reports-generated)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Lessons Learned](#lessons-learned)
+- [Future Enhancements](#future-enhancements)
+- [Repository Structure](#repository-structure)
+- [How to Run](#how-to-run)
+- [Related Projects](#related-projects)
+
+---
+
+## Before vs After
+
+| Metric | Before | After |
+|---|---|---|
+| Identity Health | 66 | 70 |
+| Privileged Access | 52 | 90 |
+| Enterprise Apps | 60 | 92 |
+| Workload Identity | 55 | 93 |
+| Identity Hygiene | 62 | 94 |
+| **Overall Enterprise Identity Score** | **59** | **88** |
+
+---
+
 ## Project Objectives
 
 - Build a realistic Microsoft Entra ID environment with enterprise users, groups, and applications
@@ -76,87 +159,6 @@ flowchart TD
 | 08-Executive-Risk-Dashboard.ps1 | Combines scores into an executive dashboard |
 | 09-Remediation-Tracker.ps1 | Generates remediation recommendations |
 | Start-IAM006.ps1 | Unified operations console |
-
----
-
-## Walkthrough
-
-![Controlled Chaos Tenant Builder](images/01-controlled-chaos-tenant-builder.png)
-
-The controlled chaos builder created 200 lab users across 8 departments with intentional identity findings — disabled accounts left in active groups, excessive access, password policy exceptions, and ownerless applications.
-
----
-
-![Tenant Verification](images/02-tenant-verification.png)
-
-The verification script confirmed all expected IAM-006 findings were present in the tenant before analytics were generated.
-
----
-
-![Enterprise Identity Health Analyzer](images/03-enterprise-identity-health-analyzer.png)
-
-The Identity Health Analyzer performed a live Microsoft Graph assessment and produced an initial identity operations score across all finding categories.
-
----
-
-![Enterprise Identity Health Findings](images/04-enterprise-identity-health-findings.png)
-
-Critical and high-risk findings surfaced — privileged assignments, ownerless applications, disabled accounts, and users with excessive access across multiple department groups.
-
----
-
-![Privileged Access Dashboard](images/05-privileged-access-dashboard.png)
-
-The Privileged Access Dashboard reviewed permanent role assignments, non-IT administrative access, disabled privileged accounts, and users holding multiple privileged roles simultaneously.
-
----
-
-![Enterprise App Risk Scanner](images/06-enterprise-app-risk-scanner.png)
-
-The App Risk Scanner identified ownerless application registrations, expiring credentials, and abandoned applications requiring governance review or decommission.
-
----
-
-![Workload Identity Analyzer](images/07-workload-identity-analyzer.png)
-
-The Workload Identity Analyzer reviewed service principal hygiene and application ownership — identifying workload identities with no owner and no credential rotation policy.
-
----
-
-![Identity Hygiene Analyzer](images/08-identity-hygiene-analyzer.png)
-
-The Identity Hygiene Analyzer reviewed disabled accounts, missing directory attributes, excessive group memberships, and other lifecycle issues across the full user population.
-
----
-
-![Executive Risk Dashboard Before](images/09-executive-risk-dashboard-before.png)
-
-Before remediation, the tenant scored **59 / 100** — high identity operations risk across privileged access, application governance, and identity hygiene.
-
----
-
-![Executive Risk Dashboard After](images/10-executive-risk-dashboard-after.png)
-
-After remediation, the tenant improved to **88 / 100** — demonstrating measurable security posture improvement across every category.
-
----
-
-![Remediation Tracker](images/11-remediation-tracker.png)
-
-The Remediation Tracker generated prioritized recommendations across all finding categories and tracked the actions taken to reach the improved security posture.
-
----
-
-## Before vs After
-
-| Metric | Before | After |
-|---|---|---|
-| Identity Health | 66 | 70 |
-| Privileged Access | 52 | 90 |
-| Enterprise Apps | 60 | 92 |
-| Workload Identity | 55 | 93 |
-| Identity Hygiene | 62 | 94 |
-| **Overall Enterprise Identity Score** | **59** | **88** |
 
 ---
 
