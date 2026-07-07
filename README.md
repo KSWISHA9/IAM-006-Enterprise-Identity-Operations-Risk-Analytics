@@ -275,8 +275,8 @@ Run individual modules:
 
 | Project | Description |
 |---|---|
-| [IAM-001 Hybrid Identity](https://github.com/KSWISHA9/hybrid-identity-engineering) | Active Directory and Microsoft Entra Connect |
-| [IAM-002 Identity Lifecycle](https://github.com/KSWISHA9/IAM-002-Identity-Lifecycle-Automation) | Joiner-Mover-Leaver automation |
+| [IAM-001 Hybrid Identity](https://github.com/KSWISHA9/IAM-001-Hybrid-Identity-Engineering) | Active Directory and Microsoft Entra Connect |
+| [IAM-003 Identity Lifecycle](https://github.com/KSWISHA9/IAM-003-Identity-Lifecycle-Automation) | Joiner-Mover-Leaver automation |
 | [IAM-004 Zero Trust](https://github.com/KSWISHA9/IAM-004-Conditional-Access-Zero-Trust) | Conditional Access baseline |
 | [IAM-005 Identity Governance](https://github.com/KSWISHA9/IAM-005-Identity-Governance) | PIM, entitlement management, access reviews |
 
