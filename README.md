@@ -41,7 +41,16 @@ flowchart TD
 
 ---
 
-## Walkthrough
+## Evidence Links
+
+- [View all screenshots](images/)
+- [Review PowerShell toolkit](scripts/)
+- [Review generated reports](reports/)
+- [Review exported data](exports/)
+
+---
+
+## Evidence Gallery
 
 ![Controlled Chaos Tenant Builder](images/01-controlled-chaos-tenant-builder.png)
 
@@ -109,11 +118,23 @@ The Remediation Tracker generated prioritized recommendations across all finding
 
 ---
 
+## What This Proves
+
+- Built a Microsoft Entra ID identity operations toolkit using Microsoft Graph PowerShell.
+- Created controlled lab risk across users, groups, privileged roles, applications, workload identities, and identity hygiene.
+- Produced before-and-after risk scoring that improved the overall identity score from 59 to 88.
+- Generated executive-ready reports, dashboards, CSV exports, and remediation recommendations.
+- Demonstrated how IAM telemetry can be transformed into operational intelligence and measurable remediation.
+
+---
+
 ## Table of Contents
 
 - [Business Request](#business-request)
 - [Architecture](#architecture)
-- [Walkthrough](#walkthrough)
+- [Evidence Links](#evidence-links)
+- [Evidence Gallery](#evidence-gallery)
+- [What This Proves](#what-this-proves)
 - [Before vs After](#before-vs-after)
 - [Project Objectives](#project-objectives)
 - [Toolkit Modules](#toolkit-modules)
@@ -242,7 +263,6 @@ IAM-006-Enterprise-Identity-Operations-Risk-Analytics/
 |-- images/
 |-- reports/
 |-- exports/
-|-- dashboards/
 |-- docs/
 `-- README.md
 ```
